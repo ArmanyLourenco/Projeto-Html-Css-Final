@@ -1,6 +1,6 @@
 # Nova Era — Landing Page (Projeto) - MMORPG
 
-Breve descrição: Página de apresentação (landing page) para o MMORPG fictício chamado "Nova Era". É um jogo online (MMORPG) com mundo aberto e personalização total do personagem.
+Breve descrição: Meu projeto consistem em uma Página de apresentação (landing page) para o MMORPG fictício chamado "Nova Era". É um jogo online (MMORPG) com mundo aberto e personalização total do personagem.
 
 Como resolvi cada ponto :
 
