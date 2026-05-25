@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Arte conceitual Nova Era">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c3aed" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#071024" />
+  <g transform="translate(80,80)">
+    <rect x="0" y="0" width="1040" height="540" rx="18" fill="url(#g)" opacity="0.12" />
+    <text x="40" y="120" fill="#fff" font-family="sans-serif" font-size="48" font-weight="700">Nova Era — MMORPG</text>
+    <text x="40" y="180" fill="#cfe9ff" font-family="sans-serif" font-size="22">Mundo aberto online • Personalização total do personagem</text>
+    <circle cx="920" cy="360" r="120" fill="#0b1220" opacity="0.75" />
+    <circle cx="880" cy="320" r="80" fill="#7c3aed" opacity="0.3" />
+  </g>
+</svg>
