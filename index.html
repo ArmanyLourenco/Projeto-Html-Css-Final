@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nova Era — Landing</title>
+    <meta
+      name="description" 
+      content="Landing page do MMORPG 'Nova Era' — RPG online com mundo aberto e personalização total do personagem."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="Nova Era - página inicial"
+          >Nova Era</a
+        >
+        <nav role="navigation" aria-label="Menu principal" class="main-nav">
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#signup">Inscreva-se</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <button class="btn primary" id="preorder">Pre-order</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="game-title">
+        <div class="container hero-grid">
+          <div class="hero-media">
+            <picture>
+              <source srcset="assets/hero.svg" type="image/svg+xml" />
+              <img
+                src="assets/hero.svg"
+                alt="Arte conceitual do jogo Nova Era"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="hero-content">
+            <h1 id="game-title">Nova Era — Reescreva o futuro</h1>
+            <p class="tagline">
+              Uma experiência single-player imersiva com mundo aberto — personalize seu personagem livremente e jogue com outras pessoas em um universo persistente.
+              MMORPG online com mundo aberto.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn primary" href="#trailer">Assistir trailer</a>
+              <a class="btn ghost" href="#signup">Receba novidades</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title">Destaques</h2>
+          <div class="features-grid">
+            <article class="feature-card" tabindex="0" aria-labelledby="f1">
+              <h3 id="f1">Mundo Vivo</h3>
+              <p>Ecossistemas reativos que mudam com suas escolhas.</p>
+            <article class="feature-card" tabindex="0" aria-labelledby="f1">
+              <h3 id="f1">Mundo Vivo Online</h3>
+              <p>Servidor persistente com eventos dinâmicos e interação entre jogadores.</p>
+            </article>
+            <article class="feature-card" tabindex="0" aria-labelledby="f2">
+              <h3 id="f2">RPG & Progressão</h3>
+              <p>Árvores de habilidades, missões e evolução do personagem ligada às suas escolhas.</p>
+            </article>
+            <article class="feature-card" tabindex="0" aria-labelledby="f3">
+              <h3 id="f3">Customização Total</h3>
+              <p>Customize aparência, habilidades e equipamentos — sem limites impostos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="trailer" class="trailer" aria-labelledby="trailer-title">
+        <div class="container">
+          <h2 id="trailer-title">Trailer</h2>
+          <div class="video-wrap">
+            <video
+              controls
+              preload="metadata"
+              poster="assets/hero.svg"
+              aria-label="Trailer do jogo"
+            >
+              <source src="" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <aside class="newsletter" id="signup" aria-labelledby="signup-title">
+        <div class="container">
+          <h2 id="signup-title">Receba novidades</h2>
+          <form
+            class="signup-form"
+            action="#"
+            method="post"
+            aria-label="Formulário de inscrição"
+          >
+            <label for="email" class="visually-hidden">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="seu@exemplo.com"
+              required
+            />
+            <button class="btn primary" type="submit">Inscrever</button>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© 2026 Nova Era Studios — Projeto demonstrativo</p>
+      </div>
+    </footer>
+
+    <script>
+      // Small enhancement: focus management for skip link
+      document
+        .querySelector(".skip-link")
+        .addEventListener("click", function (e) {
+          var main = document.getElementById("main");
+          main.focus();
+        });
+    </script>
+  </body>
+</html>
