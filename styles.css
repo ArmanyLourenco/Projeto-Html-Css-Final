@@ -1,6 +1,7 @@
 :root {
-  /* Sistema de design com variáveis (Módulo 02) */
+ 
   --bg: #0f1724;
+  --bg-secondary: #071024;
   --surface: #0b1220;
   --muted: #94a3b8;
   --accent: #7c3aed; /* roxo */
@@ -29,7 +30,7 @@
   }
 }
 
-/* Base */
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +43,7 @@ body {
   font-family: var(--font-stack);
   font-size: var(--fs-base);
   color: var(--text);
-  background: linear-gradient(180deg, var(--bg), #071024);
+  background: linear-gradient(180deg, var(--bg), var(--bg-secondary));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -53,7 +54,7 @@ body {
   padding: 0 var(--space-2);
 }
 
-/* Skip link visible on focus */
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -72,7 +73,6 @@ body {
   border-radius: 6px;
 }
 
-/* Header - sticky (Pesquisa) */
 .site-header {
   position: sticky;
   top: 0;
@@ -142,13 +142,13 @@ body {
   outline-offset: 2px;
 }
 
-/* Hero: layout híbrido Grid + Flex (Módulo 03) */
+
 .hero {
   padding: var(--space-4, 3rem) 0;
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
 }
@@ -172,7 +172,7 @@ body {
   gap: 1rem;
 }
 
-/* Features grid */
+
 .features {
   padding: 2.5rem 0;
 }
@@ -195,7 +195,7 @@ body {
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
 }
 
-/* Trailer */
+
 .trailer {
   padding: 2rem 0;
 }
@@ -205,7 +205,7 @@ body {
   background: #000;
 }
 
-/* Newsletter */
+
 .newsletter {
   padding: 2rem 0;
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.06));
@@ -224,13 +224,11 @@ body {
   color: var(--text);
 }
 
-/* Footer */
 .site-footer {
   padding: 1.5rem 0;
   color: var(--muted);
 }
 
-/* Responsividade (Módulo 04) */
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -241,7 +239,6 @@ body {
   }
 }
 
-/* Scroll snap para seções (Pesquisa) */
 main {
   scroll-snap-type: y mandatory;
 }
@@ -251,7 +248,7 @@ aside {
   padding-top: 2rem;
 }
 
-/* Acessibilidade: foco visual e reduz motion (Módulo 09) */
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;
@@ -260,7 +257,7 @@ aside {
   }
 }
 
-/* :focus-visible modern handling */
+
 :focus {
   outline: none;
 }
@@ -269,7 +266,7 @@ aside {
   outline-offset: 2px;
 }
 
-/* Utility */
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -279,7 +276,6 @@ aside {
   white-space: nowrap;
 }
 
-/* Microinteractions leves (Módulo 05) */
 .hero-content {
   animation: fadeInUp 0.6s ease both;
 }
